@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Professional portfolio of Pri, Full Stack Developer and Data Analyst." />
+  <title>Pri | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="logo" href="#home">Pri</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#ai">AI</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="section hero container reveal">
+      <p class="eyebrow">Available for opportunities</p>
+      <h1>Pri</h1>
+      <h2>Full Stack Developer / Data Analyst</h2>
+      <p class="hero-intro">
+        I build scalable web products and transform complex data into clear, actionable insights.
+        My focus is reliable engineering, clean UX, and business-driven problem solving.
+      </p>
+      <a href="#projects" class="btn btn-primary">View Projects</a>
+    </section>
+
+    <section id="about" class="section container reveal">
+      <div class="section-heading">
+        <p class="eyebrow">About</p>
+        <h2>Professional Summary</h2>
+      </div>
+      <p class="summary">
+        I am a results-oriented developer with hands-on experience across frontend and backend systems,
+        plus strong analytical capability for data reporting and decision support.
+      </p>
+
+      <div class="about-grid">
+        <article class="card">
+          <h3>Technical Skills</h3>
+          <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>React, Node.js, MongoDB</li>
+            <li>Python, SQL</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Soft Skills</h3>
+          <ul>
+            <li>Communication</li>
+            <li>Problem Solving</li>
+            <li>Teamwork</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Academic Background</h3>
+          <p>B.Tech Information Technology - placeholder</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section container reveal">
+      <div class="section-heading">
+        <p class="eyebrow">Projects</p>
+        <h2>Selected Work</h2>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3>Study Planner Web App</h3>
+          <p>
+            A productivity-focused application that helps students create weekly study plans,
+            track progress, and receive deadline reminders. It supports user authentication,
+            schedule management, and task completion analytics.
+          </p>
+          <p class="tech"><strong>Technologies:</strong> MongoDB, Express.js, React, Node.js</p>
+        </article>
+
+        <article class="project-card">
+          <h3>Data Analytics Dashboard</h3>
+          <p>
+            An interactive dashboard for monitoring KPI trends and operational metrics.
+            It automates data cleaning, visualizes performance in real time,
+            and provides drill-down filters for business reporting.
+          </p>
+          <p class="tech"><strong>Technologies:</strong> Python, SQL, Power BI</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="resume" class="section container reveal">
+      <div class="section-heading">
+        <p class="eyebrow">Resume</p>
+        <h2>Professional Profile</h2>
+      </div>
+
+      <div class="resume-wrapper card">
+        <iframe
+          src="resume.pdf"
+          title="Resume PDF"
+          class="resume-viewer"
+          loading="lazy"
+        ></iframe>
+        <div class="resume-actions">
+          <a href="resume.pdf" class="btn btn-primary" download>Download Resume</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="ai" class="section container reveal">
+      <div class="section-heading">
+        <p class="eyebrow">Bonus</p>
+        <h2>Generate Bio with AI</h2>
+      </div>
+      <div class="card ai-card">
+        <p>
+          Click to generate a professional bio variation using a simulated AI response.
+        </p>
+        <button id="generateBioBtn" class="btn btn-secondary" type="button">Generate Bio with AI</button>
+        <p id="aiBioOutput" class="ai-output" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Pri. All rights reserved.</p>
+      <a href="#top">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
